@@ -10,15 +10,15 @@ window.PORTFOLIO_DATA = {
 
   /* ─────────────────────────── SITE ─────────────────────────── */
   site: {
-    title: "John Doe — Frontend Developer",
-    description: "Personal portfolio of John Doe, a Frontend Developer based in Dhaka.",
+    title: "Tanvir Sorforaz — Full-stack Developer",
+    description: "Personal portfolio of Tanvir Sorforaz, a Full-stack Developer based in Dhaka.",
     defaultTheme: "light"   // "light" or "dark"
   },
 
   /* ───────────────────────── PERSONAL ───────────────────────── */
   personal: {
-    name: "John Doe",
-    designation: "Frontend Developer",
+    name: "Tanvir Sorforaz",
+    designation: "Full-stack Developer",
     tagline: "I build clean, fast, and accessible web experiences.",
     greeting: "Hi, I'm {name}",
     profileImage: "images/profile.jpg",
@@ -32,23 +32,23 @@ window.PORTFOLIO_DATA = {
 
   /* ───────────────────────── CONTACT ────────────────────────── */
   contact: {
-    email: "john.doe@example.com",
-    phone: "+8801700000000",
-    whatsapp: "+8801700000000"
+    email: "tsorforaz@example.com",
+    phone: "+8801778751423",
+    whatsapp: "+8801778751423"
   },
 
   /* ───────────────────────── SOCIAL ─────────────────────────── */
   /* Recognized icon names: github, linkedin, twitter, facebook */
   social: [
-    { name: "github",   label: "GitHub",   url: "https://github.com/johndoe" },
-    { name: "linkedin", label: "LinkedIn", url: "https://linkedin.com/in/johndoe" },
-    { name: "twitter",  label: "Twitter",  url: "https://twitter.com/johndoe" },
-    { name: "facebook", label: "Facebook", url: "https://facebook.com/johndoe" }
+    { name: "github",   label: "GitHub",   url: "https://github.com/Tanvir-Sorforaz" },
+    { name: "linkedin", label: "LinkedIn", url: "https://www.linkedin.com/in/tanvir-sorforaz" },
+    { name: "twitter",  label: "Twitter",  url: "https://x.com/Tanvir_SF_" },
+    { name: "facebook", label: "Facebook", url: "https://www.facebook.com/Tanvir.Sorforaz" }
   ],
 
   /* ───────────────────────── ABOUT ──────────────────────────── */
   about: {
-    tag: "01 — About",
+    tag: "05 — About",
     heading: "About Me",
     paragraphs: [
       "Hi, I'm <strong>{name}</strong> — a passionate <span class=\"accent\">{designation}</span> who loves turning ideas into pixel-perfect, performant, and accessible web experiences.",
@@ -68,12 +68,12 @@ window.PORTFOLIO_DATA = {
 
   /* ───────────────────────── SKILLS ─────────────────────────── */
   skills: {
-    tag: "02 — Skills",
+    tag: "01 — Skills",
     heading: "Skills & Technologies",
     categories: [
       {
         name: "Languages",
-        items: ["HTML5", "CSS3 / Sass", "JavaScript (ES6+)", "TypeScript"]
+        items: ["C", "C++", "Python", "HTML5", "CSS3", "JavaScript (ES6+)", "TypeScript"]
       },
       {
         name: "Frontend",
@@ -84,7 +84,7 @@ window.PORTFOLIO_DATA = {
         items: ["Git & GitHub", "Vite / Webpack", "Figma", "REST APIs"]
       },
       {
-        name: "Backend Basics",
+        name: "Backend & Databases",
         items: ["Node.js", "Express", "MongoDB", "PostgreSQL"]
       }
     ]
@@ -96,18 +96,18 @@ window.PORTFOLIO_DATA = {
     heading: "Educational Qualification",
     items: [
       {
-        period: "2021 — 2025",
+        period: "2023 — Running",
         degree: "B.Sc. in Computer Science & Engineering",
-        institution: "University of Dhaka",
+        institution: "Faridpur Engineering College",
         location: "Dhaka, Bangladesh",
-        description: "Focused on web technologies, algorithms, and software engineering. CGPA: 3.7/4.0.",
-        tags: ["Algorithms", "Web Development", "Databases"]
+        description: "Focused on web technologies, algorithms, and software engineering. CGPA: 3.3/4.0.",
+        tags: ["Algorithms", "Competitive Programming", "Web Development", "Databases"]
       },
       {
-        period: "2018 — 2020",
+        period: "2020 — 2022",
         degree: "Higher Secondary Certificate (HSC) — Science",
-        institution: "Notre Dame College",
-        location: "Dhaka, Bangladesh",
+        institution: "Rajshahi Government City College",
+        location: "Rajshahi, Bangladesh",
         description: "Studied Physics, Chemistry, and Mathematics. GPA: 5.00/5.00.",
         tags: ["Science", "Mathematics"]
       }
@@ -118,40 +118,39 @@ window.PORTFOLIO_DATA = {
   experience: {
     tag: "04 — Experience",
     heading: "Work Experience",
-    /* Each company can have multiple roles under "roles". */
     items: [
       {
-        type: "Full Time",
-        company: "Acme Web Studio",
-        period: "Jan 2024 — Present",
-        location: "Remote",
+        type: "Currently",
+        company: "Open to opportunities",
+        period: "Present",
+        location: "Dhaka, Bangladesh",
         roles: [
           {
-            title: "Junior Frontend Developer",
-            project: "Dashly Analytics",
-            duration: "Jan 2024 — Present",
+            title: "Aspiring Full-stack Developer",
+            duration: "Present",
             bullets: [
-              "<span class=\"hl\">Built and shipped 20+ reusable UI components</span> with vanilla JS and React, cutting feature delivery time by ~30%.",
-              "Collaborated with design to translate Figma into <span class=\"hl\">pixel-perfect, accessible interfaces</span> (WCAG AA) used by 40K+ monthly users.",
-              "Improved Lighthouse performance score from <span class=\"hl\">68 → 96</span> by lazy-loading assets and code-splitting routes."
+              "Actively looking for my <span class=\"hl\">first junior full-stack role</span> or internship.",
+              "Building personal projects with <span class=\"hl\">HTML, CSS, JavaScript, and Node.js</span> to grow my skills.",
+              "Learning in public — sharing progress and code on <span class=\"hl\">GitHub</span> and Twitter.",
+              "<span class=\"hl\">Replace this card</span> with your first job when you get one."
             ]
           }
         ]
       },
       {
-        type: "Internship",
-        company: "StartUp Hub",
-        period: "Jun 2023 — Dec 2023",
-        location: "Dhaka, Bangladesh",
+        type: "Learning",
+        company: "Self-taught journey",
+        period: "2023 — Present",
+        location: "Remote",
         roles: [
           {
-            title: "Frontend Intern",
-            project: "SaaS Dashboard",
-            duration: "Jun 2023 — Dec 2023",
+            title: "Full-stack Development",
+            duration: "Ongoing",
             bullets: [
-              "Converted <span class=\"hl\">15+ Figma screens</span> into production-ready HTML/CSS/JS.",
-              "Wrote reusable CSS utility classes adopted across 3 internal projects.",
-              "Fixed <span class=\"hl\">40+ accessibility issues</span> and shipped an audit-ready component library."
+              "Completed <span class=\"hl\">300+ hours</span> of hands-on practice in HTML, CSS, and JavaScript.",
+              "Followed <span class=\"hl\">The Odin Project</span> and <span class=\"hl\">FreeCodeCamp</span> curricula.",
+              "Rebuilt 10+ real-world UI components to study layout and interaction patterns.",
+              "Published all work on GitHub and deployed live demos on Vercel."
             ]
           }
         ]
@@ -161,68 +160,74 @@ window.PORTFOLIO_DATA = {
 
   /* ──────────────────────── PROJECTS ────────────────────────── */
   projects: {
-    tag: "05 — Projects",
+    tag: "02 — Projects",
     heading: "Featured Projects",
     subheading: "A few things I've built recently.",
     items: [
-      {
-        id: "taskflow",
-        name: "TaskFlow — Kanban Board",
-        image: "images/project-1.jpg",
-        tech: ["HTML", "CSS", "JavaScript", "LocalStorage"],
-        shortDescription: "A drag-and-drop Kanban board with offline persistence and dark mode.",
-        description: "TaskFlow is a lightweight Kanban board that helps you organize tasks across 'To Do', 'In Progress', and 'Done' columns. It persists state in localStorage and supports keyboard navigation and dark mode.",
-        liveLink: "https://example.com/taskflow",
-        githubLink: "https://github.com/johndoe/taskflow",
-        challenges: [
-          "Implementing smooth drag-and-drop without a library while keeping accessibility intact.",
-          "Preventing data loss when users refresh mid-drag by debouncing writes to localStorage.",
-          "Building a responsive layout that collapses columns into tabs on mobile."
-        ],
-        improvements: [
-          "Add multi-board support with a board switcher.",
-          "Introduce real-time sync using WebSockets or a lightweight backend.",
-          "Add labels, due dates, and reminders."
-        ]
-      },
-      {
-        id: "weatherlens",
-        name: "WeatherLens",
-        image: "images/project-2.jpg",
-        tech: ["JavaScript", "Fetch API", "Chart.js", "CSS Grid"],
-        shortDescription: "A weather dashboard with a 7-day forecast and interactive charts.",
-        description: "WeatherLens fetches live weather data from OpenWeatherMap and visualizes temperature and humidity trends with Chart.js. Users can search any city, save favorites, and switch between metric and imperial units.",
-        liveLink: "https://example.com/weatherlens",
-        githubLink: "https://github.com/johndoe/weatherlens",
-        challenges: [
-          "Rate-limiting and caching API responses to stay within the free tier.",
-          "Handling empty/error states gracefully when a city name is misspelled.",
-          "Rendering responsive charts that work well on small screens."
-        ],
-        improvements: [
-          "Add geolocation-based auto-detect for first-time visitors.",
-          "Provide severe-weather alerts via the browser Notification API.",
-          "Cache data in IndexedDB for offline use."
-        ]
-      },
-      {
-        id: "devquiz",
-        name: "DevQuiz",
+        {
+        id: "mangomart",
+        name: "MangoMart — E-commerce Store",
         image: "images/project-3.jpg",
-        tech: ["HTML", "CSS", "JavaScript", "JSON"],
-        shortDescription: "A quiz app for developers with instant feedback and score history.",
-        description: "DevQuiz presents multiple-choice questions on HTML, CSS, JS, and general web concepts. It gives instant feedback with explanations, tracks your score history in localStorage, and supports a timed mode.",
-        liveLink: "https://example.com/devquiz",
-        githubLink: "https://github.com/johndoe/devquiz",
+        tech: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
+        shortDescription: "A modern e-commerce store with cart, checkout, and order tracking.",
+        description: "MangoMart is a full e-commerce storefront focused on selling fresh mangoes and related products. It includes a product catalog with categories and search, a persistent cart, a streamlined checkout, and an order history page. The design emphasizes product imagery and clear pricing, and the site is optimized for both desktop and mobile shoppers.",
+        liveLink: "https://mango-mart.vercel.app",
+        githubLink: "https://github.com/Tanvir-Sorforaz/MangoMart",
         challenges: [
-          "Designing a fair scoring system that accounts for question difficulty.",
-          "Managing timer state across tab switching without desyncing.",
-          "Structuring question data so contributors can easily add more."
+          "Keeping the <span class=\"hl\">cart in sync across tabs and page reloads</span> without relying on a heavy state library.",
+          "Optimizing product images for fast loading on mobile without losing visual quality.",
+          "Designing a checkout flow that reduces friction — fewer fields, clear error messages, and no surprise steps.",
+          "Structuring product and order data so adding new categories later doesn't require schema changes."
         ],
         improvements: [
-          "Add user accounts and leaderboards with a server.",
-          "Generate questions dynamically from a curated API.",
-          "Add a 'study mode' that shows explanations first."
+          "Integrate a real payment gateway (Stripe / bKash / SSLCommerz).",
+          "Add product reviews and ratings with photo uploads.",
+          "Build an admin panel for managing inventory and orders.",
+          "Add wishlist, coupons, and order tracking with delivery status."
+        ]
+      },
+      {
+        id: "fixitnow",
+        name: "FixItNow — Home Services Platform",
+        image: "images/project-1.jpg",
+        tech: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
+        shortDescription: "A full-stack platform to book verified home-service technicians on demand.",
+        description: "FixItNow connects users with verified technicians for common household services like plumbing, electrical work, cleaning, and appliance repair. Users can browse services, view technician profiles, pick a time slot, and book in a few taps. The backend handles booking workflows, technician assignment, and status updates, while the frontend delivers a smooth, mobile-first booking experience.",
+        liveLink: "https://fixitnow-frontend-yp2h.onrender.com/",
+        githubLink: "https://github.com/Tanvir-Sorforaz/FixItNow",
+        challenges: [
+          "Designing a booking flow that prevents <span class=\"hl\">double-booking the same technician</span> across overlapping time slots.",
+          "Structuring MongoDB schemas for services, technicians, and bookings without deep nesting that hurt query performance.",
+          "Handling <span class=\"hl\">slow cold starts on Render's free tier</span> with loading skeletons and optimistic UI so the app still feels responsive.",
+          "Keeping the booking form accessible and mobile-friendly across small screens."
+        ],
+        improvements: [
+          "Add real-time chat between users and technicians using Socket.io.",
+          "Integrate online payments (Stripe or SSLCommerz) with refund handling.",
+          "Build an admin dashboard for managing technicians, services, and dispute resolution.",
+          "Add push notifications for booking confirmations and reminders."
+        ]
+      },
+      {
+        id: "hourbooking",
+        name: "Hour Booking Platform",
+        image: "images/project-2.jpg",
+        tech: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
+        shortDescription: "Book services, rooms, or consultations by the hour with live slot availability.",
+        description: "Hour Booking Platform lets users reserve services or spaces on an hourly basis. Users see live availability, select a duration, and confirm a slot. The system prevents overlapping reservations, tracks booking history, and gives each user a personal dashboard to manage upcoming and past bookings. Designed with a clean calendar interface and clear pricing so users always know what they're paying for.",
+        liveLink: "https://hour-booking-platform.vercel.app",
+        githubLink: "https://github.com/Tanvir-Sorforaz1/Hour-Booking-Platform",
+        challenges: [
+          "Preventing <span class=\"hl\">race conditions</span> when two users try to book the same slot at the same time.",
+          "Building a reusable calendar component that handles time zones, disabled dates, and dynamic pricing without a heavy library.",
+          "Managing form state across a multi-step booking flow without losing user input on back navigation.",
+          "Deploying on Vercel with separate frontend and backend origins while keeping CORS and cookies secure."
+        ],
+        improvements: [
+          "Add recurring bookings and subscription-style reservations.",
+          "Introduce a review system for services after completion.",
+          "Add SMS or email reminders 30 minutes before each booking.",
+          "Build an analytics dashboard for service providers."
         ]
       }
     ]
