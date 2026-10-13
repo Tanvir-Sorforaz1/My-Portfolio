@@ -62,11 +62,18 @@
   }
 
   function bindThemeToggle() {
-    $('#themeToggle')?.addEventListener('click', () => {
+    const btn = $('#themeToggle');
+    if (!btn) return;
+
+    btn.addEventListener('click', () => {
       const root = document.documentElement;
       const next = root.dataset.theme === 'light' ? 'dark' : 'light';
       root.dataset.theme = next;
       localStorage.setItem('theme', next);
+
+      // Update the meta theme-color to match (nice touch for mobile browsers)
+      const meta = document.querySelector('meta[name="theme-color"]');
+      if (meta) meta.setAttribute('content', next === 'dark' ? '#171c28' : '#fafaf8');
     });
   }
 
@@ -91,6 +98,8 @@
     setMeta('name', 'description', s.description);
     setMeta('property', 'og:title', s.title);
     setMeta('property', 'og:description', s.description);
+    setMeta('property', 'og:image', s.ogImage);
+    setMeta('name', 'twitter:card', 'summary_large_image');
   }
 
   /* ============================================================
@@ -126,7 +135,6 @@
       }
     });
 
-    // document meta
     if (P.site?.title) document.title = P.site.title;
   }
 
@@ -619,7 +627,6 @@
       mainView.hidden = false;
       detailView.hidden = true;
 
-      // If coming from a detail page, scroll to the anchor
       if (wasDetail && hash && hash.startsWith('#')) {
         const target = document.getElementById(hash.slice(1));
         if (target) {
@@ -631,7 +638,6 @@
       }
 
       if (wasDetail) {
-        // Fallback: scroll to projects if no anchor
         const projects = document.getElementById('projects');
         if (projects) {
           requestAnimationFrame(() =>
@@ -664,6 +670,7 @@
     }
 
     initTheme();
+    bindThemeToggle();   /* ← THE FIX: this line was missing */
     applyMeta();
     fillConfigNodes();
     fillHero();
@@ -679,7 +686,7 @@
     setYear();
 
     window.addEventListener('hashchange', handleRoute);
-    handleRoute(); // handle on first load (in case URL has #project=...)
+    handleRoute();
   }
 
   if (document.readyState === 'loading') {
